@@ -1,6 +1,13 @@
+body {
+	font-family: verdana;
+	font-size: 13px;
+	color: #666;
+}
+
 h2 h4 {
 	padding: 0px;
 	margin: 0px;
+	width: 100%;
 	}
 p {
 	margin: 15px;
@@ -8,43 +15,25 @@ p {
 
 table {
 	padding: 10px 0px 0px 10px; 
+	border-collapse: collapse;
+	margin: 10px;
 	}
 
 td {
 	vertical-align: top;
-	border: solid 1px black;
 	}
 	
 #head-container {	
 	background-color: #F3F3f3;
 	display: inline-flex;
-	font-family: verdana;
 	width: 970px; 
 	}
 
-#header-aboutMe {
-	padding-left: 10px;
-	margin: 0px 10px 0px 15px;
-	background: linear-gradient(#c1c1c1, #999);
-	color: #fff;
-	display: inline-block;
-	width: 410px;
-	position: relative;
-	}
 
-#aboutMe img {
-	width: 485px;
-	border-style: solid;
-	border-width: thick;
-	border-color: white;
-	}
-
-#h1-name #h2-name {
-	font-family: verdana;
-	}
 
 #h1-name {
  	width: 485px;
+ 	padding-left: 10px;
 	}
 
 #h2-name {
@@ -56,6 +45,8 @@ td {
 .container-body {
 	background: linear-gradient(#625262, #27191d);
 	width: 970px;
+	margin-top: -10px;
+	padding-top: 10px;
 	}
 
 .header-overal {
@@ -64,7 +55,7 @@ td {
 	background: linear-gradient(#898894, #A8A8AD, #898894);
 	color: #fff;
 	display: inline-block;
-	width: 300px;
+	width: 285px;
 	position: relative;
 	}
 
@@ -72,11 +63,12 @@ td {
 .container-three {
 	background: linear-gradient(to right, #FFF, #D8CDD9);
 	margin: 0px;
-	padding:0px 0px 0px 0px;
+	padding:0px;
+	max-width: 290px;
 	}		
 
 .images img {
-	width: 305px;
+	width: 290px;
 	}
 
 .firstheader {
@@ -92,8 +84,28 @@ td {
 	padding: 5px;
 	margin-left: 15px;
 	width: 410px;
-	height: 250px;
+	height: 260px;
 	}
+
+#aboutMe-declaration a {
+	color: grey;
+	padding-left: -20px;
+}
+
+#header-aboutMe {
+	padding-left: 10px;
+	margin: 0px 10px 0px 15px;
+	background: linear-gradient(#c1c1c1, #999);
+	color: #fff;
+	display: inline-block;
+	width: 410px;
+	}
+
+#aboutMe img {
+	width: 485px;
+	border: solid thick #999;
+	}
+
 
 .logos img {
 	display: inline-block;
@@ -103,8 +115,13 @@ td {
 
 .button {
 	text-align: center;
-	border-color: green;
+	border-color: black;
 	border-style: solid;
+	border-width:1px;
+	background-color: green;
+	border-radius: 10px;
+	padding: 10px 0px 10px 0px;
+	color: #fff;
 }
 
 
@@ -113,3 +130,13 @@ td {
 	position: relative;
 	width: 20px;
 	}
+
+.contact {
+	text-decoration: underline;
+}
+
+.footer {
+	background-color: #c1c1c1;
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
